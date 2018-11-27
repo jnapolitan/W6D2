@@ -25,16 +25,18 @@ class View {
     $square.css('background-color', "white");
     $square.html(this.game.currentPlayer);
     $square.addClass('mark');
-    if (this.game.currentPlayer === 'x') {
+    
+    if (this.game.currentPlayer === ' ') {
       $square.addClass('x-mark');
     } else {
       $square.addClass('o-mark');
     }
+    this.checkWinner();
   }
   
   checkWinner() {
     if (this.game.board.winner()) {
-      alert (`${this.game.currentPlayer} wins!`);
+      setTimeout(() => alert (`${this.game.currentPlayer} wins! LOSER IS A FAILURE AT LIFE`));
     }
   }
     

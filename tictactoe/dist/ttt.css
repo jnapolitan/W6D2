@@ -10,6 +10,17 @@
   background-color: yellow;
 }
 
+h1 {
+  font-family: Helvetica;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .ttt ul {
   display: flex;
   width: 600px;
@@ -30,9 +41,13 @@
 }
 
 .x-mark {
-  color: red;
+  background: url('https://expo.advance.net/img/8fde34f15b/width960/1c3_web_snow01.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .o-mark {
-  color: green;
+  background: url('https://cdn.vox-cdn.com/thumbor/2dahqQK1-T5QLy2GmDa1m8PACOw=/0x0:1800x1800/1200x800/filters:focal(756x756:1044x1044)/cdn.vox-cdn.com/uploads/chorus_image/image/61538133/Benedict_Cumberbatch_as_The_Grinch.0.0.1460656551.0.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
