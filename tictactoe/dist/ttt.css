@@ -1,0 +1,38 @@
+.square {
+  border: 5px solid black;
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  background-color: grey;
+}
+
+.square:hover {
+  background-color: yellow;
+}
+
+.ttt ul {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  list-style: none;
+  border: 5px solid black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+.x-mark {
+  color: red;
+}
+
+.o-mark {
+  color: green;
+}
