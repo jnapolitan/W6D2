@@ -11,13 +11,16 @@ class View {
   bindEvents() {
     this.$el.on('click', '.square', (e) => {
       let $square = $(e.target);
-      this.game.playMove($square.data('pos'));
+      let pos = $square.data('pos');
+      if (!this.game.board.isEmptyPos(pos)) {
+        alert('That\'s not an empty position dummy!');
+      }
+      this.game.playMove(pos);
       this.makeMove($square);
     });
   }
 
   makeMove($square) {
-    // alert if move is invalid
     $square.removeClass('.square');
     $square.css('background-color', "white");
     $square.html(this.game.currentPlayer);
@@ -27,9 +30,14 @@ class View {
     } else {
       $square.addClass('o-mark');
     }
-    
   }
-
+  
+  checkWinner() {
+    if (this.game.board.winner()) {
+      alert (`${this.game.currentPlayer} wins!`);
+    }
+  }
+    
   setupBoard($el) {
     
     const posses = {
