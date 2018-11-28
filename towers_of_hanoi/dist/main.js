@@ -86,14 +86,25 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/hanoi-view.js":
+/*!***************************!*\
+  !*** ./src/hanoi-view.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("class View {\n  constructor(game, $rootEl) {\n    this.game = game;\n    this.$rootEl = $rootEl;\n  }\n\n}\n\n\n\nmodule.exports = View;\n\n//# sourceURL=webpack:///./src/hanoi-view.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("$( () => {\n  const rootEl = $('.hanoi');\n  const game = new HanoiGame();\n  new HanoiView(game, rootEl);\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const View = __webpack_require__(/*! ./hanoi-view.js */ \"./src/hanoi-view.js\");\n\n$( () => {\n  const $rootEl = $('.hanoi');\n  const game = new HanoiGame();\n  new View(game, $rootEl);\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
