@@ -19,6 +19,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url('https://media1.popsugar-assets.com/files/thumbor/2VLr0tUUS0Yi62arQFv87bpqXx0/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2017/08/09/904/n/1922283/0f141506598b73b291b091.43594297_edit_img_cover_file_43858141_1502310679/i/How-Tell-Daenerys-Dragons-Apart-Game-Thrones.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .ttt ul {
@@ -29,6 +32,8 @@ body {
   border: 5px solid black;
   margin: 0px;
   padding: 0px;
+  background: url('https://pbs.twimg.com/profile_images/957613863574343680/nbvHbNCn_400x400.jpg');
+  background-size: cover;
 }
 
 .mark {
@@ -41,13 +46,15 @@ body {
 }
 
 .x-mark {
-  background: url('https://expo.advance.net/img/8fde34f15b/width960/1c3_web_snow01.jpeg');
+  /* background: url('https://cdn.vox-cdn.com/thumbor/nooV9CHw3TGpRVF210T8XXO6X3Q=/71x0:570x374/1200x800/filters:focal(71x0:570x374)/cdn.vox-cdn.com/uploads/chorus_image/image/49958765/kit-harington-sad-jon-snow-game-of-thrones.0.0.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background: none;
 }
 
 .o-mark {
-  background: url('https://cdn.vox-cdn.com/thumbor/2dahqQK1-T5QLy2GmDa1m8PACOw=/0x0:1800x1800/1200x800/filters:focal(756x756:1044x1044)/cdn.vox-cdn.com/uploads/chorus_image/image/61538133/Benedict_Cumberbatch_as_The_Grinch.0.0.1460656551.0.jpg');
+  /* background: url('https://i.pinimg.com/originals/a7/53/df/a753df35e2af70882caf2acfe167ac29.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background: none;
 }

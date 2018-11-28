@@ -22,11 +22,11 @@ class View {
 
   makeMove($square) {
     $square.removeClass('.square');
-    $square.css('background-color', "white");
+    // $square.css('background-color', "white");
     $square.html(this.game.currentPlayer);
     $square.addClass('mark');
     
-    if (this.game.currentPlayer === ' ') {
+    if (this.game.currentPlayer === '🔪') {
       $square.addClass('x-mark');
     } else {
       $square.addClass('o-mark');
